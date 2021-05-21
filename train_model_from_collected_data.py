@@ -101,3 +101,7 @@ def run():
   end = time.time()
   print(end - start)
   return predicting('https://m.media-amazon.com/images/I/61OorFhm6SL._AC_SX569_.jpg')
+
+
+if __name__ == "__main__":
+  run()

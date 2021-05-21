@@ -19,7 +19,7 @@ def extractimagefeat(query):
   imglist = sc.get_image_urls(query)
   i = 1
   # specify image num
-  image_num = 20
+  image_num = 50
   for img in imglist[0:image_num]:
     #extract image features from each images and save to files
     try:

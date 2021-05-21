@@ -6,7 +6,7 @@ import requests
 import joblib
 import numpy as np
 import os
-from trained_model_from_google_image_search import run
+from train_model_from_google_image_search import run
 
 app = Flask(__name__)
 
