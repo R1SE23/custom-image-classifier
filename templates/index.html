@@ -1,0 +1,47 @@
+{% extends "base.html" %} {% block content %}
+
+<h2>Example Image Classifier Model</h2>
+
+<h5>Model: Resnet50 + SVC</h5>
+
+<h6>This model can classfiy: wagons, bicycles, motor vehicles, railed vehicles, watercraft, amphibious vehicles, aircraft, spacecraft.</h6>
+<h8>Speed of the model will be improve soon :)</h8>
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+
+
+        <label for="imageUpload" class="upload-label">
+            Choose Images...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+    
+    <body>
+        <p align="margin-left"><a href=model_builder ><button class=grey style="height:75px;width:150px">Click here to go to classifier model builder page</button></a></p>
+        </body>
+</div>
+
+
+
+     
+
+
+{% endblock %}
